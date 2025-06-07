@@ -1,4 +1,3 @@
-import React from 'react'
 import { GiMoneyStack } from "react-icons/gi";
 import small_skip from "../assets/small-skip.png"
 import light_medium_skip from "../assets/light-medium-skip.png"
