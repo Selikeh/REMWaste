@@ -27,9 +27,9 @@ interface SkipData {
 
 function Card({skip, selected, onClick}:{skip:SkipData, selected:boolean, onClick:(skip:SkipData)=>void}) {
   return (
-    <li className={` w-fit group rounded-xl col-span-12 md:col-span-6 lg:col-span-4 hover:cursor-pointer hover:bg-darklight-green ${selected?"bg-main-green/90":""}`} onClick={()=>{onClick(skip)}}>                
+    <li className={` w-fit flex flex-col justify-between group rounded-xl col-span-12 md:col-span-6 lg:col-span-4 hover:cursor-pointer hover:bg-darklight-green ${selected?"bg-main-green/90":""}`} onClick={()=>{onClick(skip)}}>                
         <div className=' w-fit h-fit relative'>
-            <img className='' src={skip.size<8?small_skip:skip.size<12?light_medium_skip:skip.size<16?medium_skip:skip.size<40?large_skip:heavy_skip} alt="" />
+            <img className=' w-[456px] aspect-video ' src={skip.size<8?small_skip:skip.size<12?light_medium_skip:skip.size<16?medium_skip:skip.size<40?large_skip:heavy_skip} alt="" />
             <input type="radio" name="" id="" checked={selected} className=' h-6 w-6 absolute top-2 right-2 accent-main-green' />  
         </div>
         <div className={`  px-2 py-1.5 group-hover:text-slate-50 ${selected?"text-darklight-green":""}`}>
