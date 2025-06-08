@@ -14,4 +14,4 @@ Functionality is broken down into 3 main parts:
 
 2. The data is mapped through and displayed as individual product cards showing some of the information for each product.
 
-3. Upon clicking a product card, the details of that particular product are then stored in another state variable and then passed to a footer component which pops up to display more details about the product. The corresponding product card is also highlighted and its radio button input checked giving it more emphasis.
+3. Upon clicking a product card, the details of that particular product are then stored in another state variable and then passed to a footer component which pops up to display more details about the product. The corresponding product card is also highlighted and its radio button input checked, giving it more emphasis.
