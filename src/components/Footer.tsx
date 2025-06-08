@@ -25,9 +25,9 @@ interface SkipData {
 
 function Footer({selectedData}:{selectedData:SkipData}) {
   return (
-    <footer className={`fixed left-0 right-0 w-screen bg-darklight-green rounded-t-lg  flex justify-center transition-all duration-500 overflow-hidden ${selectedData.id?"bottom-0":"-bottom-[550px]"}`}>
+    <footer className={`fixed left-0 right-0 w-screen bg-darklight-green rounded-t-lg  flex justify-center transition-all duration-200 ease-in-out overflow-hidden ${selectedData.id?"bottom-0":"-bottom-[550px]"}`}>
       <div className='  px-3 p-2 space-y-3.5 h-fit mt-1 w-5xl text-secondary-green '>
-        <h3 className=' text-2xl font-semibold mb-2'>Your Selection</h3>
+        <h3 className=' text-xl font-semibold mb-1'>Your Selection</h3>
         <div className=' flex gap-2 flex-col mid-mobile:flex-row mid-mobile:justify-between'>
           <div className=' flex gap-0.5 sm:gap-10 mid-mobile:flex-col sm:flex-row'>
             <div>
